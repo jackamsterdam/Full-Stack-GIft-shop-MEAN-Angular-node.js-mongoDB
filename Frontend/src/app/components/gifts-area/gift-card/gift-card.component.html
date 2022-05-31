@@ -1,0 +1,10 @@
+<div>
+    <span>Name: {{gift.name}}</span><br>
+    <span>Description: {{gift.description}}</span><br>
+    <span>Price: {{gift.price | currency: "USD"}}</span><br>
+    <span>Discount: {{gift.discount}}</span><br>
+    <span>Date: {{gift.date | date}}</span><br>
+    <span>Gift Type: {{gift.target.type}}</span><br>
+    <button (click)="deleteGift(gift._id)">🚮</button>
+    
+</div>
